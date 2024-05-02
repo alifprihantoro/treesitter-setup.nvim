@@ -6,18 +6,13 @@ return {
     dependencies = {
       {
         'numToStr/Comment.nvim',
-        dependencies =
-        {
+        dependencies = {
           'JoosepAlviste/nvim-ts-context-commentstring',
           lazy = true,
           opts = {
             enable_autocmd = false,
           },
         },
-      },
-      {
-        'windwp/nvim-autopairs',
-        event = 'InsertEnter',
       },
       'nvim-treesitter/nvim-treesitter-textobjects',
       {
