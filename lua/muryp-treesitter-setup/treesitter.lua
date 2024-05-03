@@ -11,6 +11,10 @@ ts.setup {
     enable = true,
     disable = {},
   },
+  auto_install = true,
+  modules = {},
+  sync_install = true,
+  ignore_install = {},
   ensure_installed = {
     'tsx',
     'toml',
@@ -43,6 +47,9 @@ ts.setup {
     'prisma',
   },
   autotag = {
+    enable_rename = true,
+    enable_close = true,
+    enable_close_on_slash = true,
     enable = true,
     filetypes = {
       'html',
